@@ -13,7 +13,7 @@ from math_equivalence import is_equiv
 
 def get_llama_ip():
     import os
-    llm_ip = os.getenv('llm_ip')
+    llm_ip = os.getenv('LLM_IP')
     return llm_ip
 
 def get_mmlu_qa_pairs(df, ix):

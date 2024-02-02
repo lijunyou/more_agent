@@ -23,8 +23,8 @@ TEMPERATURE = float(sys.argv[8])
 TOP_P = float(sys.argv[9])
 
 
-openai.api_key = os.getenv('openai_key')
-openai.api_base = os.getenv('openai_ip')
+openai.api_key = os.getenv('OPENAI_KEY')
+openai.api_base = os.getenv('OPENAI_IP')
 openai.api_type = 'azure'
 openai.api_version = '2023-05-15'
 
