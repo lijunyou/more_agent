@@ -128,13 +128,6 @@ def batch_generate(answer_context, model, llm_ip=None, nums=1, temperature=1, to
         print(e, flush=True)
         print("retrying due to an error......", flush=True)
         time.sleep(5)
-        if openai.api_key != "none":
-            if openai.api_key == "8e8cfdc516e04947803f55da3128f4d0":
-                openai.api_key = "dd1377d9749c4079b73c2e4189736d13"
-                openai.api_base = "https://bot-with-llm-japan-east2.openai.azure.com/"
-            else:
-                openai.api_key = "8e8cfdc516e04947803f55da3128f4d0"
-                openai.api_base = "https://bot-with-llm-japan-east.openai.azure.com/"
         return batch_generate(answer_context, model, llm_ip,nums=nums,temperature=temperature,top_p=top_p)
     return completion
 
